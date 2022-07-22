@@ -1,0 +1,152 @@
+/* 01  BELOW 1664px  */
+
+@media (max-width: 104em) {
+  .one{
+    margin-right: 40rem;
+  }
+   .two{
+    margin-right:25rem;
+   }
+}
+/* 02  BELOW 1450px */
+
+@media (max-width: 90em) {
+
+  .one{
+    margin-top:5.6rem;
+    margin-right:20rem;
+    line-height:9rem;
+  }
+   .two{
+    margin-right:20rem;
+    line-height: 3rem;;
+   }
+   .para1{
+    gap:3.8rem;
+    margin-right:2.4rem;
+   }
+}
+
+/* 03  BELOW 1200px  */
+@media (max-width: 75em){
+
+  .topnav{
+    padding-right:3.6rem;
+  }
+  .one{
+    margin-right: 10rem;
+  }
+  .two{
+    margin-right:5rem;
+  }
+    .para1{
+      gap: 2.4rem;
+      margin-right: 1.2rem;
+    }
+}
+
+/* 04 BELOW 1038px  */
+@media (max-width: 64em){
+  .one{
+    margin-right:4rem;
+  }
+  .two{
+    margin-right:3rem;
+  }
+
+}
+
+
+/* 05  BELOW 750px */
+
+@media (max-width:46em)
+{
+   .btn-mobile-nav{
+  display: block;
+  z-index: 9999;
+ }
+
+
+ .main-nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in;
+
+  /* Hide navigation */
+  /* Allows NO transitions at all */
+  /* display: none; */
+
+  /* 1) Hide it visually */
+  opacity: 0;
+
+  /* 2) Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+
+  /* 3) Hide it from screen readers */
+  visibility: hidden;
+}
+
+.nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  } 
+
+  .main{
+    flex-direction: column;
+    margin-left: 3.6rem;
+
+  }
+  .para1{
+    margin: 0.2rem 0.8rem;
+  }
+  .one{
+    font-size:6.4rem ;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .two{
+    font-size:1.5rem;
+    text-align: center;
+  }
+
+  .para2{
+      margin-left:14.8rem;
+  }
+
+}
+
+
+
+
+
